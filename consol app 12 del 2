@@ -1,0 +1,28 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace ConsoleApp12
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine("Skriv en værdi");
+            string tekst = Console.ReadLine();
+
+
+            WriteSomething(0, tekst);
+            WriteSomething(0);
+
+        }
+
+        private static void WriteSomething(int number, string message = "Goddag")
+        {
+            Console.WriteLine(message);
+        }
+    }
+
+}
