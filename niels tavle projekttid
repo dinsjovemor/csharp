@@ -1,0 +1,32 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace ConsoleApp13___niels_eksempel_tavle
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+
+            Console.Writeline("Hvor mange hele timer tror du det tager at kode opgaven?");
+            int anslaaetTid = Convert.ToInt16(Console.ReadLine());
+
+            int enendeligtEstimat = BeregnProjektTid(anslaaetTid);       //Her skal vi ende med at have det reelle tidsforbrug
+
+            Console.WriteLine("Der blev angivet " + anslaaetTid + " Timer, og ganger med 3 og får dermed et reelt estimaet på" + endeligtEstimaet + " timer i projektet.");
+
+            //Her er funktionen, der tager en programmørs gæt, og ganger med 3
+            int BeregnProjektTid(int programmoerGaet)
+            {
+                return programmoerGaet*3;
+
+            }
+
+            //--- Her slutter funktionen
+
+            }
+        }
+    }
+}
