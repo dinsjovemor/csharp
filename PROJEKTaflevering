@@ -1,0 +1,11 @@
+//Viser tekst
+Console.WriteLine("Gæt et tal");
+Console.WriteLine("Venligst indtast dit navn:");
+
+//Dette er en tom linje
+Console.WriteLine(" ");
+
+//Vise brugerens indtastede tekst
+string navn = Console.ReadLine();
+
+Console.WriteLine("Hej velkommen " + navn);
