@@ -12,7 +12,7 @@ namespace ConsoleApp13___afleverings_projekt
         static void Main(string[] args)
         {
             int brugerTal = 0;
-            //Viser tekst
+            //Viser tekst 
             Console.WriteLine("Gæt et tal");
             Console.WriteLine("Venligst indtast dit navn:");
 
