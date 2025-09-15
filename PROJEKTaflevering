@@ -26,7 +26,25 @@ namespace ConsoleApp13___afleverings_projekt
             Random rnd = new Random();
 
             int pcTal = rnd.Next(1, 101);
+            //Konverterer indtastning til int32
+            int brugerTal = Convert.ToInt32(Console.ReadLine());
 
+            while (brugerTal != pctal)
+            {
+                // Konverterer input til et heltal
+                brugerTal = Convert.ToInt32(input);
+
+                if (brugerTal > pctal)
+                {
+                    Console.WriteLine("tallet du skal gætte er lavere");
+                }
+                else if (brugerTal < pctal)
+                {
+                    Console.WriteLine("tallet du skal gætte er højere");
+                }
+
+            }
+            Console.WriteLine("du har gættet rigtigt");
 
 
 
