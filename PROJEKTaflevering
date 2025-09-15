@@ -1,11 +1,35 @@
-//Viser tekst
-Console.WriteLine("Gæt et tal");
-Console.WriteLine("Venligst indtast dit navn:");
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Security.Cryptography;
+using System.Text;
+using System.Threading.Tasks;
 
-//Dette er en tom linje
-Console.WriteLine(" ");
+namespace ConsoleApp13___afleverings_projekt
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            //Viser tekst
+            Console.WriteLine("Gæt et tal");
+            Console.WriteLine("Venligst indtast dit navn:");
 
-//Vise brugerens indtastede tekst
-string navn = Console.ReadLine();
+            //Dette er en tom linje
+            Console.WriteLine(" ");
 
-Console.WriteLine("Hej velkommen " + navn);
+            //Vise brugerens indtastede tekst
+            string navn = Console.ReadLine();
+
+            Console.WriteLine("Hej velkommen " + navn);
+
+            Random rnd = new Random();
+
+            int pcTal = rnd.Next(1, 101);
+
+
+
+
+        }
+    }
+}
